@@ -1,7 +1,9 @@
 ---
-# Front matter comment to ensure Jekyll properly reads file.
+# Main scss file
 ---
-@import 
-    "base",
-    "layout",
-    "syntax-highlighting"
+@charset "utf-8";
+
+@import
+  'normalize',
+  'solo',
+  'syntax';
