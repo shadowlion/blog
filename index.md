@@ -34,7 +34,7 @@ I use this website to showcase my projects and will eventually make a blog to sh
 Justin Chiou<br>
 
 Come find me at:<br>
-[GitHub](http://github.com/shadowlion)/[linkedIn](https://linkedin.com/in/justinchiou)/[Youtube](youtube.com/j10s87)
+[GitHub](http://github.com/shadowlion)/[linkedIn](https://linkedin.com/in/justinchiou)/[Youtube](https://youtube.com/j10s87)
 
 You can also contact me via:<br>
 [Email](mailto:chiou.kai@gmail.com)/[Phone](tel:630-204-8122)
