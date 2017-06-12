@@ -16,24 +16,30 @@ I use this website to showcase my projects and will eventually make a blog to sh
 
 ## Active Projects
 
-* [Wunderfund](https://wunderfund.co)
+#### [Wunderfund](https://wunderfund.co)
 > Equity Crowdfunding platform aimed at lifestyle-based startup companies in the hyperlocal region. Cashflow validation = Silicon Valley of the Midwest?
-* [Praelatus](https://github.com/praelatus)
+
+#### [Praelatus](https://github.com/praelatus)
 > Open-source ticketing system alternative to [JIRA](https://www.atlassian.com/software/jira). It's making waves already, and soon will be asking for beta test users!
 
 ## Past Projects
 
-* [Ari's Certification Site](https://github.com/HeyAri/Certify-Yourself-Working-directory)<br>
+#### [Ari's Certification Site](https://github.com/HeyAri/Certify-Yourself-Working-directory)<br>
 > A freelancer's site; he just wanted to print out certificates based on a form fill-out. Such a great project, because I, too, worked on my forms for a long time for the [Wunderfund Site](https://wunderfund.co).
-* [Bioworks Site](https://www.gobioworks.com)
+
+#### [Bioworks Site](https://www.gobioworks.com)
 > Collaborative project with [Reveal Marketing](https://reveal.marketing), there was a few frontend bugs the Wordpress plugin technicians didn't account for, and luckily I was around to step up my CSS game!
-* [Wyzerr Site](https://Wyzerr.com)
+
+#### [Wyzerr Site](https://Wyzerr.com)
 > Their very first site! The company's taking off, but they were most humble at the very start; humbled to have been their first front-end collaborator!
-* [Ballroom East Site](https://www.ballroomeast.com)
+
+#### [Ballroom East Site](https://www.ballroomeast.com)
 > My ballroom studio's website. Successful implementation, and I update the google calendar every month and mark the changes on the site every year.
-* [Aesthetics in Jewelry Site](https://www.aestheticsinjewelry.com)
+
+#### [Aesthetics in Jewelry Site](https://www.aestheticsinjewelry.com)
 > My ballroom instructor's husband's a jeweler! Still updating, when he gets around to giving me more details about dem diamonds...
-* [3rd and Benson](https://3nb.webflow.io)
+
+#### [3rd and Benson](https://3nb.webflow.io)
 > My first freelance project! A dud so far, but I'll get around to it. I was trying to get parallax to work, but I didn't really know jQuery at the time, so no bueno until I've mastered it!
 
 ## Author:
