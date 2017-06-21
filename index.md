@@ -22,10 +22,13 @@ I use this website to showcase my projects and will eventually make a blog to sh
 #### [Praelatus](https://github.com/praelatus)
 > Open-source ticketing system alternative to [JIRA](https://www.atlassian.com/software/jira). It's making waves already, and soon will be asking for beta test users!
 
-## Past Projects
-
 #### [Ari's Certification Site](https://github.com/HeyAri/Certify-Yourself-Working-directory)<br>
 > A freelancer's site; he just wanted to print out certificates based on a form fill-out. Such a great project, because I, too, worked on my forms for a long time for the [Wunderfund Site](https://wunderfund.co).
+
+## Past Projects
+
+#### [TEDxCincinnati Site](http://www.tedxcincinnati.com)
+> TEDx site for the Greater Cincinnati area.
 
 #### [Bioworks Site](http://www.gobioworks.com)
 > Collaborative project with [Reveal Marketing](https://reveal.marketing), there was a few frontend bugs the Wordpress plugin technicians didn't account for, and luckily I was around to step up my CSS game!
