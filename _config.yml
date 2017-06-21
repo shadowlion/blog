@@ -1,6 +1,6 @@
 # Site settings
 title: Justin Chiou
-tag_text: Hey there!
+tag_text: Hi! I'm Justin.
 description: Welcome to my site! Here, you see all the projects I've contributed to.
 
 # Build settings
@@ -8,3 +8,6 @@ markdown: kramdown
 exclude: ["README.md"]
 sass:
   style: compressed
+
+# Google Analytics
+google_analytics: UA-101438615-1
