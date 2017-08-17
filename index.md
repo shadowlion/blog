@@ -47,7 +47,7 @@ I use this website to showcase my projects and will eventually make a blog to sh
 
 ## Author:
 
-![Justin Chiou](https://avatars.githubusercontent.com/shadowlion)
+![Justin Chiou](https://avatars3.githubusercontent.com/u/4671881?v=4&s=460)
 
 Justin Chiou<br>
 
