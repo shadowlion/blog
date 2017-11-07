@@ -10,22 +10,25 @@ I use this website to showcase my projects and will eventually make a blog to sh
 ## What I'm doing in my life (currently!)
 
 * Working with an [incredible visionary](https://twitter.com/marvinador) who has set his sights on helping the city, one startup company at a time. I also work with a designer, and [she's cool too](http://www.morgankane.me).
-* Ballroom Dancing! No rest for the champions of the world. Current DanceSport Ranking in the US: \#23.
+* Ballroom Dancing! No rest for the champions of the world. You can check out my dancing videos [here](https://youtube.com/j10s87)
 * Studying on the job! I'm still learning Python, but I find it to to be incredibly useful for the FOSS community, and I owe *everything* I know about Python backend development to [this dude](https://github.com/chasinglogic).
 * Freelancing! Obviously has its perks, like setting your own hours and rates, I find that going to [Meetups](https://www.Meetup.com) are a great way to network for leadership development, coding, or even just socializing! Other freelancers I've met along the way become fantastic friends as well!
 
 ## Active Projects
 
+#### [Thrivera](https://thrivera.io)
+> Startup that helps other startups start up. Branding, Funding, Growth Hacking.
+
 #### [Wunderfund](https://wunderfund.co)
 > Equity Crowdfunding platform aimed at lifestyle-based startup companies in the hyperlocal region. Cashflow validation = Silicon Valley of the Midwest?
+
+## Past Projects
 
 #### [Praelatus](https://github.com/praelatus)
 > Open-source ticketing system alternative to [JIRA](https://www.atlassian.com/software/jira). It's making waves already, and soon will be asking for beta test users!
 
 #### [Citrus Tree](https://thecitrustree.com)
 > Local produce site, ecommerce-based.
-
-## Past Projects
 
 #### [Ari's Certification Site](https://github.com/HeyAri/Certify-Yourself-Working-directory)<br>
 > A freelancer's site; he just wanted to print out certificates based on a form fill-out. Such a great project, because I, too, worked on my forms for a long time for the [Wunderfund Site](https://wunderfund.co).
