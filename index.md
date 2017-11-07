@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-Just a freelance web developer from Cincinnati, Ohio.
+Just a web developer from Cincinnati, Ohio.
 
 I started programming for medical research back in college in 2010 – it was my primary skill throughout my corporate career. After some introspection, I took a leap of faith and embarked on a career change into freelance web development in 2014, and I couldn’t be happier.
 
@@ -10,7 +10,7 @@ I use this website to showcase my projects and will eventually make a blog to sh
 ## What I'm doing in my life (currently!)
 
 * Working with an [incredible visionary](https://twitter.com/marvinador) who has set his sights on helping the city, one startup company at a time. I also work with a designer, and [she's cool too](http://www.morgankane.me).
-* Ballroom Dancing! No rest for the champions of the world. You can check out my dancing videos [here](https://youtube.com/j10s87)
+* Ballroom Dancing! No rest for the champions of the world. You can check out my dancing videos [here](https://youtube.com/j10s87).
 * Studying on the job! I'm still learning Python, but I find it to to be incredibly useful for the FOSS community, and I owe *everything* I know about Python backend development to [this dude](https://github.com/chasinglogic).
 * Freelancing! Obviously has its perks, like setting your own hours and rates, I find that going to [Meetups](https://www.Meetup.com) are a great way to network for leadership development, coding, or even just socializing! Other freelancers I've met along the way become fantastic friends as well!
 
