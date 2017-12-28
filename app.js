@@ -1,6 +1,7 @@
+Vue.component('intro', {
+  template: '<div>A custom component!</div>'
+});
+
 new Vue({
-  el: '#app',
-  data: {
-    msg: 'Hello World!'
-  }
-})
+  el: '#app'
+});
