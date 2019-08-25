@@ -2,3 +2,4 @@ url: "https://justinchiou.me"
 baseurl: ""
 title: "Justin Chiou"
 include: ['_pages']
+permalink: pretty
