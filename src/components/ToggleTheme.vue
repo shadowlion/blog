@@ -14,7 +14,7 @@ export default {
   },
   data() {
     return {
-      darkTheme: true
+      darkTheme: false
     }
   },
   methods: {
