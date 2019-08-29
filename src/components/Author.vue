@@ -13,11 +13,13 @@
     p.author__intro Full-stack developer, Ballroom dancer, Google searcher.
 
     p.author__links
-      a(href="//linkedin.com/in/justinchiou")
+      a(href="//linkedin.com/in/justinchiou" target="_blank")
         linkedin-icon(size="30")
-      a(href="//www.youtube.com/channel/UCB3RhejlQaoE2D23zAjFekg")
+      a(
+        href="//www.youtube.com/channel/UCB3RhejlQaoE2D23zAjFekg" target="_blank"
+      )
         youtube-icon(size="30")
-      a(href="//github.com/gridsome/gridsome-starter-blog")
+      a(href="//github.com/shadowlion" target="_blank")
         github-icon(size="30")
 </template>
 
@@ -61,7 +63,7 @@ export default {
   }
 
   &__links {
-    margin-top: -.5em;
+    // margin-top: -.5em;
     a {
       margin: 0 .5em;
     }
