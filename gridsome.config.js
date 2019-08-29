@@ -7,7 +7,7 @@
 module.exports = {
   siteName: 'Justin Chiou',
   siteDescription: 'Full-stack developer, Ballroom dancer, Google searcher',
-  siteUrl: 'https://justinchiou.me',
+  siteUrl: 'https://shadowlion.github.io',
   plugins: [
     {
       // Create posts from markdown files
