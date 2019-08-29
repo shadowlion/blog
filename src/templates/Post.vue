@@ -102,8 +102,8 @@ query Post ($path: String!) {
     }
 
     img {
-      width: calc(100% + var(--space) * 2);
-      margin-left: calc(var(--space) * -1);
+      width: calc(80% + var(--space) * 2);
+      // margin-left: calc(var(--space) * 0.25);
       display: block;
       max-width: none;
     }
