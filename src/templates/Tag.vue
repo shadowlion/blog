@@ -1,7 +1,7 @@
 <template lang="pug">
   layout
     h1.tag-title.text-center.space-bottom # {{ $page.tag.title }}
-    
+
     .posts
       post-card(
         v-for="edge in $page.tag.belongsTo.edges"
@@ -23,7 +23,6 @@ query Tag ($id: String!) {
             date (format: "D. MMMM YYYY")
             timeToRead
             description
-            coverImage (width: 860, blur: 10)
             content
           }
         }

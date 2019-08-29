@@ -8,8 +8,8 @@
     .post.content-box
       .post__header
         g-image(
-          alt="Cover image" 
-          v-if="$page.post.coverImage" 
+          alt="Cover image"
+          v-if="$page.post.coverImage"
           :src="$page.post.coverImage"
         )
 
@@ -17,7 +17,7 @@
 
       .post__footer
         post-tags(:post="$page.post")
-    
+
     .post-comments
 
     author.post-author
@@ -62,7 +62,6 @@ query Post ($path: String!) {
     }
     description
     content
-    coverImage (width: 860, blur: 10)
   }
 }
 </page-query>
@@ -82,7 +81,7 @@ query Post ($path: String!) {
     margin-bottom: calc(var(--space) / 2);
     overflow: hidden;
     border-radius: var(--radius) var(--radius) 0 0;
-    
+
     img {
       width: 100%;
     }
@@ -113,7 +112,7 @@ query Post ($path: String!) {
 
 .post-comments {
   padding: calc(var(--space) / 2);
-  
+
   &:empty {
     display: none;
   }
