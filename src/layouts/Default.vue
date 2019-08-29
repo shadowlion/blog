@@ -11,20 +11,23 @@
       slot
 
     footer.footer
-      span.footer__copyright Copyright &#169; {{ new Date().getFullYear() }}
+      span.footer__copyright.d-inline-block Copyright &#169; {{ new Date().getFullYear() }}
 </template>
 
 <script>
+import { CodeIcon, HeartIcon } from 'vue-feather-icons'
 import Logo from '~/components/Logo.vue'
 import ToggleTheme from '~/components/ToggleTheme.vue'
 
 export default {
-  props: {
-    showLogo: { default: true }
-  },
   components: {
+    CodeIcon,
+    HeartIcon,
     Logo,
     ToggleTheme
+  },
+  props: {
+    showLogo: { default: true }
   }
 }
 </script>
