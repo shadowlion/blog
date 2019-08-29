@@ -10,17 +10,26 @@
 
     h1.author__site-title(v-if="showTitle") {{ $static.metaData.siteName }}
 
-    p.author__intro Full-stack developer, Ballroom dancer, Google searcher.
+    p.author__intro Fullstack developer
+      |
+      |
+      | @
+      <a href="https://wunderfund.co">Wunderfund</a>
+      |, ballroom dancer, Google-searching problem solver.
 
     p.author__links
-      a(href="//linkedin.com/in/justinchiou" target="_blank")
+      a(href="https://linkedin.com/in/justinchiou" target="_blank")
         linkedin-icon(size="30")
       a(
-        href="//www.youtube.com/channel/UCB3RhejlQaoE2D23zAjFekg" target="_blank"
+        href="https://www.youtube.com/channel/UCB3RhejlQaoE2D23zAjFekg" target="_blank"
       )
         youtube-icon(size="30")
-      a(href="//github.com/shadowlion" target="_blank")
+      a(href="https://github.com/shadowlion" target="_blank")
         github-icon(size="30")
+      a(href="mailto:chiou.kai@gmail.com")
+        mail-icon(size="30")
+      a(href="tel:6302048122" target="_blank")
+        phone-icon(size="30")
 </template>
 
 <static-query>
@@ -32,10 +41,12 @@ query {
 </static-query>
 
 <script>
-import { GithubIcon, LinkedinIcon, YoutubeIcon } from 'vue-feather-icons'
+import {
+  GithubIcon, LinkedinIcon, YoutubeIcon, MailIcon, PhoneIcon
+} from 'vue-feather-icons'
 
 export default {
-  components: { GithubIcon, LinkedinIcon, YoutubeIcon },
+  components: { GithubIcon, LinkedinIcon, YoutubeIcon, MailIcon, PhoneIcon },
   props: ['showTitle']
 }
 </script>
