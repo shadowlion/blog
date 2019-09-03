@@ -1,8 +1,6 @@
 <template lang="pug">
   .post-meta
-    span Posted {{ post.date }}.
-    template(v-if="post.timetoRead")
-      strong {{ post.timeToRead }} min read.
+    span Posted {{ post.date }}
 </template>
 
 <script>
