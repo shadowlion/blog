@@ -1,11 +1,10 @@
 ---
 title: Init Commit
 date: 2019-09-03
-published: false
+published: true
 tags: ['coding', 'ballroom', 'rant']
 series: false
 canonical_url: false
-description: "Yeah, it's my birthday. On this particular birthday, I decided to create a blog, sharing articles that pertain to experiences that I've gone through, problems I was attempting to solve, and (perhaps) <s>rant about</s> discuss a few things if they frustrate me. Hello World!"
 ---
 
 Yeah, it's my birthday.
