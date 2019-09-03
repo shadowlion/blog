@@ -4,7 +4,7 @@
       v-for="tag in post.tags"
       :key="tag.id"
       :to="tag.path"
-    ) # {{ tag.title }}
+    ) &#35;{{ tag.title }}
 </template>
 
 <script>
