@@ -26,6 +26,8 @@
         youtube-icon(size="30")
       a(href="https://github.com/shadowlion" target="_blank")
         github-icon(size="30")
+      a(href="https://gitlab.com/shadowlion" target="_blank")
+        gitlab-icon(size="30")
       a(href="mailto:chiou.kai@gmail.com")
         mail-icon(size="30")
       a(href="tel:6302048122" target="_blank")
@@ -42,11 +44,18 @@ query {
 
 <script>
 import {
-  GithubIcon, LinkedinIcon, YoutubeIcon, MailIcon, PhoneIcon
+  GithubIcon, GitlabIcon, LinkedinIcon, YoutubeIcon, MailIcon, PhoneIcon
 } from 'vue-feather-icons'
 
 export default {
-  components: { GithubIcon, LinkedinIcon, YoutubeIcon, MailIcon, PhoneIcon },
+  components: {
+    GithubIcon,
+    GitlabIcon,
+    LinkedinIcon,
+    YoutubeIcon,
+    MailIcon,
+    PhoneIcon
+  },
   props: ['showTitle']
 }
 </script>
