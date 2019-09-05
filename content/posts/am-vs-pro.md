@@ -1,6 +1,6 @@
 ---
 title: What it means to be a professional ballroom dancer
-date: 2019-09-04
+date: 2019-09-10
 published: false
 tags: ['ballroom', 'rant']
 series: false

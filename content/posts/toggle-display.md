@@ -1,7 +1,7 @@
 ---
 title: How to Show/Hide Elements
 date: 2019-09-04
-published: false
+published: true
 tags: ['coding']
 series: false
 canonical_url: false
