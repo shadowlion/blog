@@ -36,11 +36,12 @@ This works for specific dollar amounts or when you want to include the two decim
 [Someone figured out](https://gist.github.com/tobyjsullivan/96d37ca0216adee20fa95fe1c3eb56ac) a pretty elegant solution.
 
 ```javascript
-const SYMBOLS = ["", "k", "m", "b", "t"];
+
 
 function abbreviateNumber(value) {
+    const SYMBOLS = ["", "k", "m", "b", "t"];
+
     let newValue = value;
-    const suffixes = ["", "k", "M", "B"];
     let suffixNum = 0;
 
     while (newValue >= 1000) {
@@ -49,7 +50,7 @@ function abbreviateNumber(value) {
     }
 
     newValue = newValue.toPrecision(3);
-    newValue += suffixes[suffixNum];
+    newValue += SYMBOLS[suffixNum];
 
     return newValue;
 }
