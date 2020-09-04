@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "gridsome-plugin-pug": "0.0.3",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "pug": "^2.0.4",
     "sass-loader": "^7.1.0"
   }
