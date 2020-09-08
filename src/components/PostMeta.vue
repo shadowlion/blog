@@ -1,17 +1,21 @@
-<template lang="pug">
-  .post-meta
-    span Posted {{ post.date }}
+<template>
+  <div class="post-meta">
+    Posted {{ post.date }}.
+    <template v-if="post.timeToRead">
+      <strong>{{ post.timeToRead }} min read.</strong>
+    </template>
+  </div>
 </template>
 
 <script>
 export default {
-  props: ['post']
-}
+  props: ["post"],
+};
 </script>
 
 <style lang="scss">
 .post-meta {
-  font-size: .8em;
-  opacity: .8;
+  font-size: 0.8em;
+  opacity: 0.8;
 }
 </style>

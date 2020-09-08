@@ -1,59 +1,68 @@
-<template lang="pug">
-  layout
+<template>
+  <Layout>
+    <div class="post-title">
+      <h1 class="post-title__text">
+        {{ $page.post.title }}
+      </h1>
 
-    .post-title
-      h1.post-title__text {{ $page.post.title }}
-      post-meta(:post="$page.post")
+      <PostMeta :post="$page.post" />
+    </div>
 
-    .post.content-box
-      .post__header
-        g-image(
+    <div class="post content-box">
+      <div class="post__header">
+        <g-image
           alt="Cover image"
-          v-if="$page.post.coverImage"
-          :src="$page.post.coverImage"
-        )
+          v-if="$page.post.cover_image"
+          :src="$page.post.cover_image"
+        />
+      </div>
 
-      .post__content(v-html="$page.post.content")
+      <div class="post__content" v-html="$page.post.content" />
 
-      .post__footer
-        post-tags(:post="$page.post")
+      <div class="post__footer">
+        <PostTags :post="$page.post" />
+      </div>
+    </div>
 
-    .post-comments
+    <div class="post-comments">
+      <!-- Add comment widgets here -->
+    </div>
 
-    author.post-author
+    <Author class="post-author" />
+  </Layout>
 </template>
 
 <script>
-import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
-import Author from '~/components/Author.vue'
+import PostMeta from "~/components/PostMeta";
+import PostTags from "~/components/PostTags";
+import Author from "~/components/Author.vue";
 
 export default {
   components: {
     Author,
     PostMeta,
-    PostTags
+    PostTags,
   },
-  metaInfo () {
+  metaInfo() {
     return {
       title: this.$page.post.title,
       meta: [
         {
-          name: 'description',
-          content: this.$page.post.description
-        }
-      ]
-    }
-  }
-}
+          name: "description",
+          content: this.$page.post.description,
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <page-query>
-query Post ($path: String!) {
-  post: post (path: $path) {
+query Post ($id: ID!) {
+  post: post (id: $id) {
     title
     path
-    date (format: "D. MMMM YYYY")
+    date (format: "MMMM D, YYYY")
     timeToRead
     tags {
       id
@@ -62,6 +71,7 @@ query Post ($path: String!) {
     }
     description
     content
+    # cover_image (width: 860, blur: 10)
   }
 }
 </page-query>
@@ -73,7 +83,6 @@ query Post ($path: String!) {
 }
 
 .post {
-
   &__header {
     width: calc(100% + var(--space) * 2);
     margin-left: calc(var(--space) * -1);
@@ -102,8 +111,8 @@ query Post ($path: String!) {
     }
 
     img {
-      width: calc(80% + var(--space) * 2);
-      // margin-left: calc(var(--space) * 0.25);
+      width: calc(100% + var(--space) * 2);
+      margin-left: calc(var(--space) * -1);
       display: block;
       max-width: none;
     }

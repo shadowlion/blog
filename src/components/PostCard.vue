@@ -1,34 +1,39 @@
-<template lang="pug">
-  .post-card.content-box(:class="{ 'post-card--has-poster' : post.poster }")
-
-    .post-card__header
-      g-image.post-card__image(
+<template>
+  <div
+    class="post-card content-box"
+    :class="{ 'post-card--has-poster': post.poster }"
+  >
+    <div class="post-card__header">
+      <g-image
         alt="Cover image"
-        v-if="post.coverImage"
-        :src="post.coverImage"
-      )
+        v-if="post.cover_image"
+        class="post-card__image"
+        :src="post.cover_image"
+      />
+    </div>
+    <div class="post-card__content">
+      <h2 class="post-card__title" v-html="post.title" />
+      <p class="post-card__description" v-html="post.description" />
 
-    .post-card__content
-      h2.post-card__title(v-html="post.title")
-      p.post-card__description(v-html="post.description")
+      <PostMeta class="post-card__meta" :post="post" />
+      <PostTags class="post-card__tags" :post="post" />
 
-      post-meta.post-card__meta(:post="post")
-      post-tags.post-card__tags(:post="post")
-
-      g-link.post-card__link(:to="post.path") Link
+      <g-link class="post-card__link" :to="post.path">Link</g-link>
+    </div>
+  </div>
 </template>
 
 <script>
-import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
+import PostMeta from "~/components/PostMeta";
+import PostTags from "~/components/PostTags";
 
 export default {
   components: {
     PostMeta,
-    PostTags
+    PostTags,
   },
-  props: ['post'],
-}
+  props: ["post"],
+};
 </script>
 
 <style lang="scss">
@@ -59,7 +64,7 @@ export default {
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1);
+    box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
   }
 
   &__tags {
@@ -73,7 +78,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.0;
+    opacity: 0;
     overflow: hidden;
     text-indent: -9999px;
     z-index: 0;

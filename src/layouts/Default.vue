@@ -1,35 +1,43 @@
-<template lang="pug">
-  #app
+<template>
+  <div id="app">
+    <header class="header">
+      <div class="header__left">
+        <Logo v-if="showLogo" />
+      </div>
 
-    header.header
-      .header__left
-        Logo(v-if="showLogo")
-      .header__right
-        ToggleTheme
+      <div class="header__right">
+        <ToggleTheme />
+      </div>
+    </header>
 
-    main.main
-      slot
+    <main class="main">
+      <slot />
+    </main>
 
-    footer.footer
-      span.footer__copyright.d-inline-block Copyright &#169; {{ new Date().getFullYear() }}
+    <footer class="footer">
+      <span class="footer__copyright"
+        >Copyright © {{ new Date().getFullYear() }}.
+      </span>
+      <span class="footer__links"
+        >Powered by <a href="//gridsome.org"> Gridsome </a></span
+      >
+    </footer>
+  </div>
 </template>
 
 <script>
-import { CodeIcon, HeartIcon } from 'vue-feather-icons'
-import Logo from '~/components/Logo.vue'
-import ToggleTheme from '~/components/ToggleTheme.vue'
+import Logo from "~/components/Logo.vue";
+import ToggleTheme from "~/components/ToggleTheme.vue";
 
 export default {
-  components: {
-    CodeIcon,
-    HeartIcon,
-    Logo,
-    ToggleTheme
-  },
   props: {
-    showLogo: { default: true }
-  }
-}
+    showLogo: { default: true },
+  },
+  components: {
+    Logo,
+    ToggleTheme,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -39,7 +47,7 @@ export default {
   align-items: center;
   min-height: var(--header-height);
   padding: 0 calc(var(--space) / 2);
-  top:0;
+  top: 0;
   z-index: 10;
 
   &__left,
@@ -66,10 +74,10 @@ export default {
   justify-content: center;
   padding: calc(var(--space) / 2);
   text-align: center;
-  font-size: .8em;
+  font-size: 0.8em;
 
   > span {
-    margin: 0 .35em;
+    margin: 0 0.35em;
   }
 
   a {

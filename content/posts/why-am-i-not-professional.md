@@ -2,7 +2,7 @@
 title: Why am I not professional?
 date: 2019-10-05
 published: false
-tags: ['coding']
+tags: ['ballroom']
 series: false
 canonical_url: false
 description: "Seriously? You're asking the wrong question."

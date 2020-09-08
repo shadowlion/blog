@@ -1,63 +1,60 @@
-<template lang="pug">
-  .author
-    g-image.author__image(
-      alt="author__image"
+<template>
+  <div class="author">
+    <g-image
+      alt="Author image"
+      class="author__image"
       src="~/assets/images/author.jpg"
       width="180"
       height="180"
       blur="5"
-    )
+    />
 
-    h1.author__site-title(v-if="showTitle") {{ $static.metaData.siteName }}
+    <h1 v-if="showTitle" class="author__site-title">
+      {{ $static.metadata.siteName }}
+    </h1>
 
-    p.author__intro Fullstack developer
-      |
-      |
-      | @
-      <a href="https://wunderfund.co">Wunderfund</a>
-      |, ballroom dancer, Google-searching problem solver.
+    <p class="author__intro">
+      Fullstack developer
+      <a href="https://wunderfund.co">@Wunderfund</a>, ballroom dancer, problem
+      solver.
+    </p>
 
-    p.author__links
-      a(href="https://linkedin.com/in/justinchiou" target="_blank")
-        linkedin-icon(size="30")
-      a(
-        href="https://www.youtube.com/channel/UCB3RhejlQaoE2D23zAjFekg" target="_blank"
-      )
-        youtube-icon(size="30")
-      a(href="https://github.com/shadowlion" target="_blank")
-        github-icon(size="30")
-      a(href="https://gitlab.com/shadowlion" target="_blank")
-        gitlab-icon(size="30")
-      a(href="mailto:chiou.kai@gmail.com")
-        mail-icon(size="30")
-      a(href="tel:6302048122" target="_blank")
-        phone-icon(size="30")
+    <p class="author__links">
+      <a
+        href="https://linkedin.com/in/justinchiou"
+        target="_blank"
+        name="linkedin"
+        >LinkedIn</a
+      >
+      <a
+        href="https://www.youtube.com/channel/UCB3RhejlQaoE2D23zAjFekg"
+        target="_blank"
+        name="youtube"
+        >Youtube</a
+      >
+      <a href="https://github.com/shadowlion" target="_blank" name="github"
+        >Github</a
+      >
+      <a href="https://gitlab.com/shadowlion" target="_blank" name="gitlab"
+        >Gitlab</a
+      >
+      <a href="mailto:chiou.kai@gmail.com" name="email">Email</a>
+    </p>
+  </div>
 </template>
 
 <static-query>
 query {
-  metaData {
+  metadata {
     siteName
   }
 }
 </static-query>
 
 <script>
-import {
-  GithubIcon, GitlabIcon, LinkedinIcon, YoutubeIcon, MailIcon, PhoneIcon
-} from 'vue-feather-icons'
-
 export default {
-  components: {
-    GithubIcon,
-    GitlabIcon,
-    LinkedinIcon,
-    YoutubeIcon,
-    MailIcon,
-    PhoneIcon
-  },
-  props: ['showTitle']
-}
+  props: ["showTitle"],
+};
 </script>
 
 <style lang="scss">
@@ -75,7 +72,7 @@ export default {
   }
 
   &__intro {
-    opacity: .8;
+    opacity: 0.8;
   }
 
   &__site-title {
@@ -83,9 +80,9 @@ export default {
   }
 
   &__links {
-    // margin-top: -.5em;
+    margin-top: -0.5em;
     a {
-      margin: 0 .5em;
+      margin: 0 0.5em;
     }
   }
 }

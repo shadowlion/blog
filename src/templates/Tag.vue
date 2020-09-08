@@ -1,17 +1,19 @@
-<template lang="pug">
-  layout
-    h1.tag-title.text-center.space-bottom # {{ $page.tag.title }}
+<template>
+  <Layout>
+    <h1 class="tag-title text-center space-bottom"># {{ $page.tag.title }}</h1>
 
-    .posts
-      post-card(
+    <div class="posts">
+      <PostCard
         v-for="edge in $page.tag.belongsTo.edges"
         :key="edge.node.id"
         :post="edge.node"
-      )
+      />
+    </div>
+  </Layout>
 </template>
 
 <page-query>
-query Tag ($id: String!) {
+query Tag ($id: ID!) {
   tag (id: $id) {
     title
     belongsTo {
@@ -20,7 +22,7 @@ query Tag ($id: String!) {
           ...on Post {
             title
             path
-            date (format: "D. MMMM YYYY")
+            date (format: "MMMM D, YYYY")
             timeToRead
             description
             content
@@ -33,16 +35,16 @@ query Tag ($id: String!) {
 </page-query>
 
 <script>
-import Author from '~/components/Author.vue'
-import PostCard from '~/components/PostCard.vue'
+import Author from "~/components/Author.vue";
+import PostCard from "~/components/PostCard.vue";
 
 export default {
   components: {
     Author,
-    PostCard
+    PostCard,
   },
   metaInfo: {
-    title: 'Hello, world!'
-  }
-}
+    title: "Hello, world!",
+  },
+};
 </script>
